@@ -17,4 +17,4 @@
 
 # 扫描体验小程序
 
-![二维码](https://github.com/qiushi123/weixin-xiaochengxu/blob/master/guide/%E9%A1%B5%E9%9D%A2.png?raw=true)
+![二维码](https://github.com/qiushi123/weixin-xiaochengxu/blob/master/guide/erweima.jpeg?raw=true)
