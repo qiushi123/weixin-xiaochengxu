@@ -1,7 +1,6 @@
 /* pages/myorder/myorder.wxss */
-
 page {
- background: gainsboro;
+ background: #3a5fcd;
 }
 .inner{
  width: 100%;
