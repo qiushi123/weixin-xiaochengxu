@@ -14,4 +14,4 @@
  <text class='error-title '>网络错误，没有请求到文章列表，请退出重新请求</text>
 </view>
 <!-- 首页广告 -->
-<ad  bindload='clickAD' unit-id="adunit-90219917c58ada98"></ad>
+<ad   unit-id="adunit-90219917c58ada98"></ad>

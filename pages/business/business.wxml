@@ -12,4 +12,4 @@
    </text>
 </view>
 <!-- 客服页广告 -->
-<ad bindload='clickAD' unit-id="adunit-c6c375a73beaec6a"></ad>
+<ad  unit-id="adunit-c6c375a73beaec6a"></ad>

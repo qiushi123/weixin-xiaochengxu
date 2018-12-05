@@ -112,34 +112,7 @@ App({
   })
  },
 
- //我自己的广告统计事件
- _lookAD: function() {
-  var app = this;
-  var weekTime = app._getWeek();
-  var name = "未授权";
-  var city = "编程学习--";
-  if (app.globalData.userInfo) {
-   name = app.globalData.userInfo.nickName;
-   city += app.globalData.userInfo.city;
-  }
-  wx.request({
-   url: app.globalData.baseUrl + '/guanggao/clickWeekAdd',
-   header: {
-    "Content-Type": "application/x-www-form-urlencoded"
-   },
-   method: "POST",
-   data: {
-    isVideo: false,
-    isShareOk: false,
-    weekTime: weekTime,
-    name: name,
-    city: city
-   },
-   success: function(res) {
-    console.log(res);
-   }
-  })
- },
+ 
  //获取今天是本月第几周
  _getWeek: function() {
   // 将字符串转为标准时间格式

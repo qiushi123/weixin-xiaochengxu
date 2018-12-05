@@ -61,9 +61,4 @@ Page({
    path: '/pages/index/index',
   }
  },
- //广告加载成功事件统计
- clickAD: function (e) {
-  console.log("个人中心广告加载成功");
-  app._lookAD();
- },
 })

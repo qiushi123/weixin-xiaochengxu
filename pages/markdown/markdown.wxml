@@ -5,23 +5,23 @@
 
 <view wx:if="{{idnum==0}}">
  <!-- 详情页广告1 -->
- <ad bindload='clickAD' unit-id="adunit-e31afb99d04eadf7"></ad>
+ <ad  unit-id="adunit-e31afb99d04eadf7"></ad>
 </view>
 <view wx:if="{{idnum==1}}">
  <!-- 详情页广告2 -->
- <ad bindload='clickAD' unit-id="adunit-25bc85aa977bac9c"></ad>
+ <ad  unit-id="adunit-25bc85aa977bac9c"></ad>
 </view>
 <view wx:if="{{idnum==2}}">
  <!-- 详情页广告3 -->
- <ad bindload='clickAD' unit-id="adunit-c966ae4d2cee93ad"></ad>
+ <ad  unit-id="adunit-c966ae4d2cee93ad"></ad>
 </view>
 <view wx:if="{{idnum==3}}">
  <!-- 详情页广告4 -->
- <ad bindload='clickAD' unit-id="adunit-c8c99db45346aa0c"></ad>
+ <ad  unit-id="adunit-c8c99db45346aa0c"></ad>
 </view>
 <view wx:if="{{idnum==4}}">
  <!-- 详情页广告5 -->
- <ad bindload='clickAD' unit-id="adunit-dbacac683b413e5c"></ad>
+ <ad  unit-id="adunit-dbacac683b413e5c"></ad>
 </view>
 
 

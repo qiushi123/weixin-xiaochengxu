@@ -19,9 +19,5 @@ Page({
    path: '/pages/index/index',
   }
  },
- //广告加载成功事件统计
- clickAD: function (e) {
-  console.log("客服页广告加载成功");
-  app._lookAD();
- },
+
 })

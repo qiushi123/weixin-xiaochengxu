@@ -1,5 +1,6 @@
 {
  "pages": [
+  "pages/ask/ask",
   "pages/index/index",
   "pages/business/business",
   "pages/me/me",
@@ -22,6 +23,12 @@
     "iconPath": "image/home_no.png",
     "pagePath": "pages/index/index",
     "text": "首页"
+   },
+   {
+    "selectedIconPath": "image/ask_yes.png",
+    "iconPath": "image/ask_no.png",
+    "pagePath": "pages/ask/ask",
+    "text": "你问我答"
    },
    {
     "selectedIconPath": "image/me_yes.png",

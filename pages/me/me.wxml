@@ -15,6 +15,6 @@
  <view class='right_arrow' />
 </view>
 <!--个人中心-->
-<ad bindload='clickAD' unit-id="adunit-0a0b54d816d26d1d"></ad>
+<ad  unit-id="adunit-0a0b54d816d26d1d"></ad>
 
 

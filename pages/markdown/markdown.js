@@ -59,9 +59,4 @@ Page({
    path: '/pages/index/index',
   }
  },
- //广告加载成功事件统计
- clickAD: function(e) {
-  console.log("详情页广告加载成功"+this.data.idnum);
-  app._lookAD();
- },
 })
