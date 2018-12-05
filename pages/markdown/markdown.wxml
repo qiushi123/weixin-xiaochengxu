@@ -1,0 +1,33 @@
+<!--pages/markdown.wxml-->
+<!--引入towxml模版入口文件，并使用模版-->
+<import src="/towxml/entry.wxml" />
+
+
+<view wx:if="{{idnum==0}}">
+ <!-- 详情页广告1 -->
+ <ad bindload='clickAD' unit-id="adunit-e31afb99d04eadf7"></ad>
+</view>
+<view wx:if="{{idnum==1}}">
+ <!-- 详情页广告2 -->
+ <ad bindload='clickAD' unit-id="adunit-25bc85aa977bac9c"></ad>
+</view>
+<view wx:if="{{idnum==2}}">
+ <!-- 详情页广告3 -->
+ <ad bindload='clickAD' unit-id="adunit-c966ae4d2cee93ad"></ad>
+</view>
+<view wx:if="{{idnum==3}}">
+ <!-- 详情页广告4 -->
+ <ad bindload='clickAD' unit-id="adunit-c8c99db45346aa0c"></ad>
+</view>
+<view wx:if="{{idnum==4}}">
+ <!-- 详情页广告5 -->
+ <ad bindload='clickAD' unit-id="adunit-dbacac683b413e5c"></ad>
+</view>
+
+
+
+<template is="entry" data="{{...article}}" />
+
+<text class='tipsRed'>如果您觉得文章不错，请帮忙点下文章顶部的广告呗</text>
+<text class='tips'>点击下面微信号复制博主微信,学习小程序</text>
+<button class='button' type='primary' bindtap='copyWeChat'>微信:2501902696(备注小程序)</button>

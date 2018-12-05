@@ -1,0 +1,40 @@
+/* pages/myorder/myorder.wxss */
+
+page {
+ background: gainsboro;
+}
+.inner{
+ width: 100%;
+ height: 150px;
+ background: royalblue;
+}
+.error-title{
+ color: red;
+ position: absolute;
+ margin-top: 20px;
+ font-size: 1.55em;
+}
+/* 文章列表样式 */
+.item-container {
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+ transition: 0.3s;
+ width: 92%;
+ margin: 4%;
+ background: white;
+ padding-top: 5pt;
+ padding-bottom: 5pt;
+ border-radius: 5px;
+}
+
+.item_root {
+ margin: 0pt 8pt 3pt 8pt;
+}
+
+.item_title {
+ font-size: 10pt;
+}
+
+.item-desc {
+ font-size: 10pt;
+ color: red;
+}

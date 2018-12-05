@@ -1,0 +1,15 @@
+<!--pages/business/business.wxml-->
+<!-- 加微信 -->
+<text class='tips'>加群主微信，拉你进小程序学习群，点击下面微信号即可复制，然后去添加好友的地方粘贴即可</text>
+<button class='button' bindtap='copyWeChat'>微信:2501902696</button>
+<!-- 关注公号 -->
+<official-account></official-account>
+<!--商务合作描述区域  -->
+<view class="buiness">
+ <!--进群描述  -->
+ <text class='title'>小程序技术交流学习群</text>
+ <text class='desc'>\n1, 技术问题解答 \n2, 最新技术信息分享 \n3,不定期红包雨奥！！！
+   </text>
+</view>
+<!-- 客服页广告 -->
+<ad bindload='clickAD' unit-id="adunit-c6c375a73beaec6a"></ad>

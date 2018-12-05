@@ -1,0 +1,29 @@
+/* pages/business/business.wxss */
+
+.tips {
+ color: gold;
+ font-size: 14pt;
+}
+
+.button {
+ margin-top: 15pt;
+}
+
+.buiness {
+ display: flex;
+ flex-direction: column;
+}
+
+.title {
+ font-size: 16pt;
+ margin-left: 10pt;
+ margin-top: 15pt;
+}
+
+.desc {
+ margin-left: 15pt;
+ font-size: 12pt;
+ color: #939393;
+ margin-top: 7pt;
+ line-height: 20pt;
+}
