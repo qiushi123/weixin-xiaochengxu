@@ -11,6 +11,7 @@
 		"newFeature": true
 	},
 	"compileType": "miniprogram",
+	"cloudfunctionRoot": "functions/",
 	"libVersion": "2.3.0",
 	"appid": "wx7c54942dfc87f4d8",
 	"projectname": "%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0",
@@ -41,12 +42,6 @@
 					"pathName": "pages/me/me",
 					"query": "",
 					"scene": "1011"
-				},
-				{
-					"id": -1,
-					"name": "1047扫描进入",
-					"pathName": "pages/me/me",
-					"scene": "1047"
 				}
 			]
 		}

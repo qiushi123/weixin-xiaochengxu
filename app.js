@@ -10,6 +10,11 @@ App({
   baseUrl: 'https://30paotui.com'
  },
  onLaunch: function() {
+  //云开发初始化
+  wx.cloud.init({
+   env: 'test-ec396a',
+   traceUser: true,
+  })
   this.getOpenid();
   this._getUserInfo(); //为了广告统计，这里需要提前获取用户信息
  },
@@ -112,7 +117,7 @@ App({
   })
  },
 
- 
+
  //获取今天是本月第几周
  _getWeek: function() {
   // 将字符串转为标准时间格式
@@ -139,4 +144,35 @@ App({
   let week = Math.ceil((date.getDate() + 6 - w) / 7) - 1;
   return week;
  },
+ // 获取当前时间
+ _getCurrentTime() {
+  var d = new Date();
+  var month = d.getMonth() + 1;
+  var date = d.getDate();
+  var day = d.getDay();
+  var hours = d.getHours();
+  var minutes = d.getMinutes();
+  var seconds = d.getSeconds();
+  var ms = d.getMilliseconds();
+
+  var curDateTime = d.getFullYear() + '年';
+  if (month > 9)
+   curDateTime += month + '月';
+  else
+   curDateTime += month + '月';
+
+  if (date > 9)
+   curDateTime = curDateTime + date + "日";
+  else
+   curDateTime = curDateTime + date + "日";
+  if (hours > 9)
+   curDateTime = curDateTime + hours + "时";
+  else
+   curDateTime = curDateTime + hours + "时";
+  if (minutes > 9)
+   curDateTime = curDateTime + minutes + "分";
+  else
+   curDateTime = curDateTime + minutes + "分";
+  return curDateTime;
+ }
 })

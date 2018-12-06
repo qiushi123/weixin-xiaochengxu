@@ -14,7 +14,10 @@
  <text>进学习群</text>
  <view class='right_arrow' />
 </view>
-<!--个人中心-->
-<ad  unit-id="adunit-0a0b54d816d26d1d"></ad>
-
-
+<!-- 进学习群 -->
+<view class='my_item' bindtap="goToMyAsk">
+ <text>我的提问</text>
+ <view class='right_arrow' />
+</view>
+<!--个人中心广告-->
+<ad unit-id="adunit-0a0b54d816d26d1d"></ad>

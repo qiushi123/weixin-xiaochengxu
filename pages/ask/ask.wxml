@@ -1,2 +1,11 @@
-<!--pages/ask/ask.wxml-->
-<text>pages/ask/ask.wxml</text>
+<view class="container">
+ <!--问题 -->
+ <view class='item_root'>
+  <textarea class="textarea180px" bindinput="bindinputDesc" placeholder="请输入您小程序相关的问题 6-200字" maxlength="200"/>
+ </view>
+</view>
+<!-- 提交按钮 -->
+<button class='btn_fabu' bindtap='formSubmit' type='primary'>发布提问</button>
+<text>如果觉得不错，可以帮忙点下广告！</text>
+ <!-- 详情页广告1 -->
+ <ad  unit-id="adunit-e31afb99d04eadf7"></ad>

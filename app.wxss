@@ -31,6 +31,7 @@
 }
 .line_1px {
   height: 1px;
+  background: gainsboro
 }
 .right_arrow {
   border: solid black;

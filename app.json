@@ -1,9 +1,12 @@
 {
  "pages": [
+  "pages/asklist/asklist",
+  "pages/myask/myask",
+  "pages/me/me",
+  "pages/askdetail/askdetail",
   "pages/ask/ask",
   "pages/index/index",
   "pages/business/business",
-  "pages/me/me",
   "pages/setting/setting",
   "pages/markdown/markdown"
  ],
@@ -27,7 +30,7 @@
    {
     "selectedIconPath": "image/ask_yes.png",
     "iconPath": "image/ask_no.png",
-    "pagePath": "pages/ask/ask",
+    "pagePath": "pages/asklist/asklist",
     "text": "你问我答"
    },
    {

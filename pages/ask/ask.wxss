@@ -1,1 +1,26 @@
-/* pages/ask/ask.wxss */
+page {
+ background: #3a5fcd;
+}
+
+.container {
+ width: 90%;
+ margin: 5%;
+ background: white;
+}
+
+
+.textarea180px {
+ width: 88%;
+ margin: 4%;
+ height: 180px;
+ padding: 5px;
+ border: 1px solid gainsboro;
+}
+
+/* 发布按钮 */
+
+.btn_fabu {
+ width: 80%;
+ margin-top: 30px;
+ margin-bottom: 40px;
+}

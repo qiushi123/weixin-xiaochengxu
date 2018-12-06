@@ -24,13 +24,26 @@ Page({
  },
 
  //加群主进学习群
- goToBusiness: function (event) {
+ goToBusiness: function(event) {
   var fromType = event.currentTarget.dataset.type;
   wx.navigateTo({
    url: '../business/business',
   })
  },
- 
+ // 进我的提问页面
+ goToMyAsk() {
+  if (!app.globalData.userInfo) {
+   wx.showToast({ //这里提示失败原因
+    title: '您还没有登陆！',
+    duration: 1500
+   });
+   return;
+  }
+  wx.navigateTo({
+   url: '../myask/myask',
+  })
+ },
+
  //生命周期函数--监听页面加载
  onLoad: function(options) {
   var that = this;
@@ -54,7 +67,7 @@ Page({
 
 
  //用户点击右上角分享
- onShareAppMessage: function () {
+ onShareAppMessage: function() {
   return {
    title: '零基础入门小程序开发，30天实战入门，30天让你成为技术大牛',
    desc: '零基础入门小程序开发，30天实战入门小程序，30天让你成为技术大牛',

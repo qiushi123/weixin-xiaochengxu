@@ -1,0 +1,82 @@
+/* pages/myorder/myorder.wxss */
+
+page {
+ background: #3a5fcd;
+}
+
+.inner {
+ width: 100%;
+ height: 150px;
+ background: royalblue;
+}
+
+.error-title {
+ color: red;
+ position: absolute;
+ margin-top: 20px;
+ font-size: 1.55em;
+}
+
+/* 文章列表样式 */
+
+.item-container {
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+ transition: 0.3s;
+ width: 92%;
+ margin: 4%;
+ background: white;
+ padding-top: 5pt;
+ padding-bottom: 5pt;
+ border-radius: 5px;
+}
+
+.item_root {
+ margin: 0pt 8pt 3pt 8pt;
+}
+
+.item-name {
+ font-size: 12px;
+}
+
+.item-ask {
+ font-size: 10px;
+ color: gray;
+ /* 超过2行省略号 */
+ text-overflow: -o-ellipsis-lastline;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ display: -webkit-box;
+ -webkit-line-clamp: 2;
+ line-clamp: 2;
+ -webkit-box-orient: vertical;
+}
+
+.item-answer {
+ font-size: 11px;
+ color: rgb(38, 24, 231);
+ /* 超过3行省略号 */
+ display: -webkit-box !important;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ word-break: break-all;
+ -webkit-box-orient: vertical;
+ -webkit-line-clamp: 3;
+}
+.item-pinglun{
+  font-size: 11px;
+ color: gray;
+}
+.item-tip{
+ font-size: 12px;
+ color: red;
+}
+
+/* 悬浮按钮 */
+
+.add_icon {
+ position: fixed;
+ width: 42px;
+ height: 42px;
+ bottom: 30px;
+ right: 20px;
+}

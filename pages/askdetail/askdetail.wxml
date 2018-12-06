@@ -1,0 +1,45 @@
+<!-- 表白详情 -->
+<scroll-view scroll-y="{{isScroll}}">
+ <view class='root'>
+  <!-- 问 -->
+  <view class=' item_root '>
+   <text class='item-name'>{{biaobaiDeatil.name}}问：</text>
+   <text class='item-ask'>{{biaobaiDeatil.desc}}</text>
+  </view>
+  <text class='item-ask-time'>提问时间：{{biaobaiDeatil.time}}</text>
+  <!-- 答 -->
+  <view class=' item_root '>
+   <text class='item-name'>老师回答：</text>
+   <text class='item-answer'>{{biaobaiDeatil.answer}}</text>
+  </view>
+ </view>
+ <view class='line_1px' />
+ <block wx:for="{{biaobaiDeatil.pinglun}}" wx:key="item">
+  <view class='item-container' bindtap='goDetail' data-spoorid='{{item._id}}'>
+   <text class='item-pingluner'>{{item.name}}说: </text>
+   <text class='item-content'>{{item.neirong}} </text>
+   <view>
+    <text class='item-time'>{{item.time}}</text>
+   </view>
+   <view class='line_fenge' />
+  </view>
+ </block>
+ <!-- 详情页广告3 -->
+ <text class='ad-tips'>如果觉得不错，可以帮忙点下广告！</text>
+ <ad class='ad' unit-id="adunit-c966ae4d2cee93ad"></ad>
+ <!-- 评论框 -->
+ <view class='model' wx:if="{{inputBoxShow}}">
+  <!-- invisible_model view 用于点击隐藏model评论框 -->
+  <view class='invisible_model' catchtap='invisible'></view>
+  <view class='input-box'>
+   <textarea class="textarea" bindinput='bindinputPingLun' placeholder="请输入你的评论 2-100字" cursor-spacing="{{65}}" show-confirm-bar="{{false}}" adjust-position="{{true}}" auto-focus="{{true}}" maxlength='100' />
+   <text class='send' bindtap='fabiaoPingLun'>发送</text>
+  </view>
+ </view>
+
+ <!-- 底部悬浮按钮 -->
+ <view class='bottom_root'>
+  <button wx:if='{{isShowWeiZhi}}' class='bottom_left' bindtap='wizhi'>表白位置</button>
+  <button class='btn_order' bindtap='formSubmit' type='primary'>去评论</button>
+ </view>
+</scroll-view>

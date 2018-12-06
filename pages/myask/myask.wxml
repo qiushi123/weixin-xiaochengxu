@@ -1,0 +1,30 @@
+<!--index.wxml-->
+<!-- 文章列表 -->
+<block wx:if="{{isShowArticle}}" wx:for="{{dataList}}" wx:key="item">
+ <view class='item-container' bindtap='goAskDetail' data-id='{{item._id}}'>
+  <!-- 问 -->
+  <view class=' item_root '>
+   <text class='item-name'>{{item.name}}问：</text>
+   <text class='item-ask'>{{item.desc}}</text>
+  </view>
+  <!-- 答 -->
+  <view class=' item_root '>
+   <text class='item-name'>老师回答：</text>
+   <text class='item-answer'>{{item.answer}}</text>
+  </view>
+  <!-- 评论数 -->
+  <view class='item_root'>
+   <text class='item-pinglun'>评论条数:</text>
+   <text class='item-pinglun'>{{item.pinglun?item.pinglun.length:0}}条</text>
+   <text class='item-tip'>(可点击查看)</text>
+  </view>
+ </view>
+</block>
+
+<view wx:if="{{!isShowArticle}}" class="error-root">
+ <text class='error-title '>网络错误，没有请求到数据，请退出重新请求</text>
+</view>
+<!-- 详情页广告5 -->
+<ad unit-id="adunit-dbacac683b413e5c"></ad>
+<!-- 悬浮按钮 -->
+<image bindtap='publish' class="add_icon" src="../../image/ask.png"></image>

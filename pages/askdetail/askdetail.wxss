@@ -1,0 +1,159 @@
+/* pages/map/map.wxss */
+
+.root {
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-end;
+ padding: 0px 10px;
+}
+
+.ad-tips{
+ font-size: 11px;
+ color: gainsboro;
+ margin-top: 40px;
+}
+.desc {
+ font-size: 15px;
+ color: gray;
+ margin: 10px 0px;
+ text-indent: 25px;
+}
+
+.item-name {
+ font-size: 14px;
+}
+
+.item-ask {
+ font-size: 12px;
+ color: gray;
+}
+.item-ask-time {
+ font-size: 10px;
+ color: gray;
+ margin: 5px 0px;
+}
+
+.item-answer {
+ font-size: 12px;
+ color: red;
+ padding-bottom: 20px;
+}
+
+/* 评论列表 */
+
+.item-container {
+ margin: 10px 15px;
+}
+.item-pingluner{
+ font-size: 12px;
+}
+/* 评论内容 */
+.item-content {
+ font-size: 11px;
+ color: grey;
+}
+
+.item-time {
+ font-size: 10px;
+ color: grey;
+}
+
+.line_fenge {
+ height: 1px;
+ background: gainsboro;
+ margin-top: 7px;
+}
+.ad{
+ margin-bottom: 90px;
+}
+
+/* 评论框 */
+
+.model {
+ position: fixed;
+ width: 100vw;
+ height: 100vh;
+ top: 0;
+ bottom: 0;
+ background: rgba(0, 0, 0, 0.4);
+ z-index: 300;
+}
+
+.input-box {
+ position: absolute;
+ background-color: #f8f8f8;
+ padding: 30rpx;
+ padding-bottom: 130rpx;
+ bottom: 0;
+ left: 0;
+ right: 0;
+ z-index: 101;
+}
+
+.textarea {
+ background-color: #fff;
+ width: 100%;
+ padding: 5rpx;
+ height: 3.3em;
+ font-size: 15px;
+ position: static;
+}
+
+.send {
+ font-size: 18px;
+ margin-top: 15rpx;
+ color: #09bb07;
+ float: right;
+ position: static;
+}
+
+.invisible_model {
+ position: fixed;
+ width: 100vw;
+ height: 100vh;
+ top: 0;
+ bottom: 0;
+}
+
+/* 底部栏 */
+
+/* 底部按钮父布局 */
+
+.bottom_root {
+ border-top: 1px solid gainsboro;
+ position: fixed;
+ bottom: 0;
+ width: 100%;
+ height: 50px;
+ background: white;
+ display: flex;
+ align-items: center;
+ padding-left: 15px;
+ z-index: 100;
+}
+/* 查看位置按钮 */
+.bottom_left{
+ width: 110px;
+ height: 40px;
+ font-size: 15px;
+ align-content: center;
+ text-align: center;
+ color: gray;
+ background: rgb(186, 235, 11);
+ z-index: 300;
+ position: fixed;
+ left: 15px;
+}
+/* 底部提交按钮 */
+
+.btn_order {
+ width: 120px;
+ height: 40px;
+ position: fixed;
+ right: 15px;
+ display: flex;
+ padding-left: 25px;
+ /* text-align:center; *//* vertical-align:middle ; */
+ align-items: center;
+ /* align-content: center;  */
+}
